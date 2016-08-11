@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>background-clip</title>
+    <mata charset="utf-8"></mata>
+    <style>
+        .bg-clip{
+            height:100px;
+            width:100px;
+            position:relative;
+            border:10px solid;
+            -webkit-border-image: url("hate.png") 10 10 10 10 ;
+            -moz-border-image: url("hate.png") 10 10 10 10;
+            -o-border-image: url("hate.png") 10 10 10 10;
+            border-image: url("hate.png") 10 10 10 10;
+            border-image-width: 10px 10px 10px 10px;
+            border-image-outset: 1px 1px 1px 1px;
+            border-image-repeat: round;
+            /*border-image-source	用在边框的图片的路径。
+            border-image-slice	图片边框向内偏移。
+            border-image-width	图片边框的宽度。
+            border-image-outset	边框图像区域超出边框的量。
+            border-image-repeat	图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。*/
+        }
+        h3{
+            top: 0;
+            position: absolute;
+            bottom: 0;
+            line-height: 62.56px;
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<div class="bg-clip">
+    <h3>hello</h3>
+</div>
+</html>

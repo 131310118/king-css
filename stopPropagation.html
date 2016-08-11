@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>stopPropagation</title>
+</head>
+<div id="4">
+    <p>hello 4</p>
+    <div id="3">
+        <p>hello 3</p>
+        <div id="2">
+            <p>hello 2</p>
+            <div id="1">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('1').addEventListener("click",function(){alert(this.id)});
+    document.getElementById('2').addEventListener("click",function(){alert(this.id)});
+    document.getElementById('3').addEventListener("click",function(){alert(this.id)});
+    document.getElementById('4').addEventListener("click",function(){alert(this.id)});
+</script>
+</html>

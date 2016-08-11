@@ -1,0 +1,107 @@
+body .cl {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+body .cl:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+body .cl li {
+  min-width: 40px;
+  line-height: 30px;
+  float: left;
+  color: #555;
+  margin-right: 10px;
+}
+body .cl li i {
+  width: 20px;
+  display: block;
+  color: #99a1a7;
+}
+body .cl li a {
+  height: 30px;
+  padding: 0 16px;
+  color: #989ea6;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  margin-right: 5px;
+  text-decoration: none;
+}
+body .cl li a:last-child {
+  margin-right: 0;
+}
+body .cl li a.on,
+body .cl li a:hover {
+  background-color: #226dd4;
+  color: #fff;
+}
+body .cl li:first-child a {
+  display: inline-block;
+}
+body .cl li.form_page {
+  float: left;
+  width: 60px;
+  line-height: 28px;
+  margin-right: 10px;
+}
+body .cl li.form_page .page_input {
+  border: 1px solid #ebeff3;
+  border-radius: 2px;
+  width: 48px;
+  padding: 0 5px;
+  height: 28px;
+  font-size: 14px;
+}
+body .cl li.next {
+  float: right;
+  margin: 0;
+  width: 160px;
+  line-height: 28px;
+}
+body .cl li.next a {
+  margin-right: 0;
+  text-decoration: none;
+  color: #989ea6;
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  line-height: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .cl li.next a span {
+  float: left;
+  line-height: 28px;
+  height: 28px;
+  font-size: 13px;
+}
+body .cl li.next a i {
+  float: right;
+  height: 28px;
+  line-height: 28px;
+  font-size: 15px;
+}
+body .cl li.next a:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+body .cl li.pre {
+  width: 110px;
+  margin-right: 20px;
+  float: right;
+}
+body .cl li.pre i {
+  float: left;
+  margin-left: 35px;
+}

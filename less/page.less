@@ -1,0 +1,112 @@
+.page(){
+  .cl{
+    margin:20px 0;
+    padding:0;
+    list-style: none;
+    &:after{
+      clear:both;
+      content:'';
+      display:block;
+    }
+    li{
+      min-width:40px;
+      line-height:30px;
+      float:left;
+      color:#555;
+      margin-right:10px;
+      i{
+        width:20px;
+        display:block;
+        color:#99a1a7;
+      }
+      a{
+        height: 30px;
+        padding:0 16px;
+        color:#989ea6;
+        font-style:italic;
+        font-weight:bold;
+        text-align:center;
+        background-color:#fff;
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        border-radius:2px;
+        display:block;
+        margin-right:5px;
+        text-decoration: none;
+        &:last-child{
+          margin-right:0;
+        }
+        &.on,&:hover{
+          background-color:#226dd4;
+          color:#fff;
+        }
+      }
+      &:first-child a{
+          display:inline-block;
+        }
+
+      &.form_page{
+        float:left;
+        width:60px;
+        line-height:28px;
+        margin-right:10px;
+        .page_input{
+          border:1px solid #ebeff3;
+          border-radius:2px;
+          width:48px;
+          padding:0 5px;
+          height:28px;
+          font-size:14px;
+        }
+      }
+      &.next{
+        float:right;
+        margin:0;
+        width:160px;
+        line-height:28px;
+        a{
+          margin-right:0;
+          text-decoration: none;
+          color:#989ea6;
+          padding:0 20px;
+          display:block;
+          width:100%;
+          border:1px solid #eeeeee;
+          border-radius:2px;
+          line-height:28px;
+          font-weight:bold;
+          cursor:pointer;
+          span{
+            float:left;
+            line-height:28px;
+            height:28px;
+            font-size:13px;;
+          }
+          i{
+            float:right;
+            height:28px;
+            line-height:28px;
+            font-size:15px;
+          }
+          &:after{
+            clear:both;
+            content:'';
+            display:block;
+          }
+        }
+      }
+      &.pre{
+        width:110px;
+        margin-right:20px;
+        float:right;
+        i{
+          float:left;
+          margin-left:35px;
+        }
+      }
+    }
+  }
+}
+body{
+  .page()
+}
