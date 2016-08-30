@@ -1,0 +1,38 @@
+//文本超出显示点点点(多行)(chrome)
+.ellipsis(@lines) when (@lines > 1){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:@lines;
+}
+//文本超出显示点点点(单行)
+.ellipsis(@lines) when (default()){
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+//三角形(border实现)
+.triangle(@width,@color){
+  width:0;
+  height:0;
+  border-top:@width solid @color;
+  border-right:@width solid transparent;
+}
+//绝对定位居中
+.center(){
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin:auto;
+}
+//清除浮动
+.clear(){
+  clear:both;
+  display:block;
+  content:'';
+}
