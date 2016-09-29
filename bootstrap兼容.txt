@@ -1,0 +1,29 @@
+text-size-adjust:100%
+使得没有针对移动小屏幕设备进行页面（宽度）优化的网站的字体，得以在小屏幕上进行缩放（一般为放大），并且不会出现横向滚动条
+
+vertical-align:baseline
+定义行内元素或table cell的垂直对齐方式
+
+audio:not([controls])
+选择器：选择不带controls属性的audio标签
+
+svg:not(:root)
+选择器：选择html页面内SVG标签。排除掉非根标签的SVG是因为SVG在某些文档中可以作为根标签（也就是说这些文档并不是html文档），所以要排除掉
+
+::-moz-focus-inner{padding:0;border:0}
+针对firefox，移除掉firefox按钮focus状态下的按钮内边框和间距
+
+a[href]:after{content:"("sttr(href)")";}
+在a标签的链接后插入href属性中的url
+
+p,h1{orphans:3;windows:3}
+当一段块级文字，例如一个段落，跨越两个或多个打印页面，通常而言，这段块级文字只会在页面的最后或开始的地方，显示一到两行内容。widows 和 orphans 就是分别用来设置打印页前后可以显示的块级文字段落的行数的。换言之，如果一个打印页面内容不下设置的行数，该块级文字就会往后或往前一页显示。
+
+page-break-after:avoid
+禁止在当前元素后立即换页，也就是当前元素后面一定得跟着一点内容。
+
+clip:rect(0,0,0,0)
+clip 属性剪裁绝对定位元素。隐藏元素
+
+border-collapse: collapse;：
+为表格设置合并边框。
