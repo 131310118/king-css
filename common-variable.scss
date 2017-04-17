@@ -1,0 +1,48 @@
+//screen
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+//container
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1170px;
+
+//links
+$link-hover-color-base: #23527c;
+$link-hover-decoration-base: underline;
+
+//line-height
+$line-height-base: 1.4285714em;
+
+//font
+$font-size-base: 14px;
+
+//inputs
+$input-height-base: 2.4285714em;
+$input-color-base: #555;
+$input-bg-base: #fff;
+$input-border-base: 1px solid #ccc;
+$input-border-radius-base: .2em;
+$input-box-shadow-base: inset 0 1px 1px rgba(0,0,0,.075);
+$input-transition-base: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+$input-padding-vertical-base: 0.4285714em;
+$input-padding-horizontal-base: 0.8571428em;
+$input-focus-border-base: 1px solid #66afe9;
+$input-focus-outline-base: 0;
+$input-focus-box-shadow-base: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+
+//btn
+$btn-padding-vertical-base: .3em;
+$btn-padding-horizontal-base: .8em;
+$btn-border-base: 1px solid rgba(0,0,0,.1);
+$btn-background-color-base: #fff;
+$btn-color-base: #333;
+$btn-border-radius-base: .2em;
+$btn-line-height-base: 1.5em;
+$btn-font-size-base: 125%;
+$btn-box-shadow-base: 0 .05em .25em rgba(0,0,0,.5);
+$btn-transition-base: color ease-in-out .15s, background-color ease-in-out .15s, border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+$btn-hover-background-color-base: linear-gradient(hsla(0,0%,100%,.2), transparent);
+$btn-hover-border-base: 1px solid #adadad;
+$btn-active-box-shadow-base: inset 0 3px 5px rgba(0,0,0,.125);

@@ -1,0 +1,105 @@
+@import "common-variable";
+@import "background-and-border";
+@import "compatible";
+
+//block
+@mixin block {
+  display: block;
+  width: 100%;
+}
+
+@mixin container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+//links
+@mixin a($a-link-hover-color: $link-hover-color-base, $a-link-hover-decoration: $link-hover-decoration-base) {
+  color: inherit;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $a-link-hover-color;
+    text-decoration: $a-link-hover-decoration;
+  }
+}
+
+//inputs
+@mixin input-text($input-height: $input-height-base, $input-font-size: $font-size-base, $input-padding-vertical:
+$input-padding-vertical-base, $input-padding-horizontal: $input-padding-horizontal-base, $input-color: $input-color-base,
+$input-bg: $input-bg-base, $input-border: $input-border-base, $input-border-radius: $input-border-radius-base,
+$input-box-shadow: $input-box-shadow-base, $input-transition: $input-transition-base, $input-focus-border:
+$input-focus-border-base, $input-focus-outline: $input-focus-outline-base, $input-focus-box-shadow: $input-focus-box-shadow-base) {
+  height: $input-height;
+  padding: $input-padding-vertical $input-padding-horizontal;
+  line-height: 17 / 7 * $input-font-size;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  @include box-shadow($input-box-shadow);
+  @include transition($input-transition);
+  &:focus {
+    border: $input-focus-border;
+    outline: $input-focus-outline;
+    @include box-shadow($input-focus-box-shadow);
+  }
+}
+
+//buttons
+@mixin btn($btn-padding-vertical: $btn-padding-vertical-base, $btn-padding-horizontal: $btn-padding-horizontal-base,
+$btn-border: $btn-border-base, $btn-background-color: $btn-background-color-base, $btn-color: $btn-color-base,
+$btn-border-radius: $btn-border-radius-base, $btn-line-height: $btn-line-height-base, $btn-font-size: $btn-font-size-base,
+$btn-box-shadow: $btn-box-shadow-base, $btn-transition: $btn-transition-base, $btn-hover-background-color:
+$btn-hover-background-color-base, $btn-hover-border: $btn-hover-border-base, $btn-active-box-shadow: $btn-active-box-shadow-base) {
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: $btn-padding-vertical $btn-padding-horizontal;
+  border: $btn-border;
+  background: $btn-background-color;
+  color: $btn-color;
+  border-radius: $btn-border-radius;
+  line-height: $btn-line-height;
+  font-size: $btn-font-size;
+  @include user-select(none);
+  @include box-shadow($btn-box-shadow);
+  @include transition($btn-transition);
+  &:hover {
+    background: $btn-background-color $btn-hover-background-color;
+    border: $btn-hover-border;
+  }
+  &.active {
+    @include box-shadow($btn-active-box-shadow);
+  }
+}
+
+//fa
+@mixin fa {
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('./font-awesome-4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
+    src: url('./font-awesome-4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('./font-awesome-4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('./font-awesome-4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('./font-awesome-4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('./font-awesome-4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

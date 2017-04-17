@@ -1,0 +1,122 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.input-text {
+  height: 2.42857em;
+  padding: 0.42857em 0.85714em;
+  line-height: 34px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  .input-text:focus {
+    border: 1px solid #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0.3em 0.8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #333;
+  border-radius: 0.2em;
+  line-height: 1.5em;
+  font-size: 125%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5); }
+  .btn:hover {
+    background: #fff linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+    border: 1px solid #adadad; }
+  .btn.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+.translucent-border {
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background: white;
+  background-clip: padding-box; }
+
+.multiple-frames {
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 0 10px #655, inset 0 0 0 15px deeppink, inset 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 10px #655, inset 0 0 0 15px deeppink, inset 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+  padding: 15px; }
+
+.double-border {
+  height: 10px;
+  background: #fff;
+  outline: 1px dashed #000;
+  outline-offset: -2px; }
+
+.inside-corner {
+  height: 10px;
+  border-radius: 0.2em;
+  outline: 0.284em solid #000;
+  -webkit-box-shadow: 0 0 0 0.084em #000;
+  box-shadow: 0 0 0 0.084em #000; }
+
+.horizontal-stripes {
+  height: 100px;
+  background: linear-gradient(#fb3 50%, #58a 0);
+  background-size: 100% 30px; }
+
+.vertical-stripes {
+  height: 100px;
+  background: linear-gradient(to right, #fb3, 50%, #58a 0);
+  background-size: 30px 100%; }
+
+.diagonal-stripes {
+  height: 100px;
+  background: repeating-linear-gradient(60deg, #fb3, #fb3 15px, #58a 0, #58a 30px); }
+
+.subtle-stripes {
+  height: 100px;
+  background: #fb3;
+  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 15px, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 30px); }
+
+.blueprint {
+  height: 100px;
+  background: #fb3;
+  background-image: linear-gradient(360deg, white 2px, transparent 0), linear-gradient(-90deg, white 2px, transparent 0), linear-gradient(360deg, rgba(255, 255, 255, 0.3) 1px, transparent 0), linear-gradient(-90deg, rgba(255, 255, 255, 0.3) 1px, transparent 0);
+  background-size: 75px 75px, 75px 75px, 25px 25px, 25px 25px; }
+
+.polka {
+  height: 100px;
+  background: #fb3;
+  background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+  background-size: 15px 15px;
+  background-position: 0 0, 7.5px 7.5px; }
+
+.checkerboard {
+  height: 100px;
+  background: #fb3;
+  background-image: linear-gradient(45deg, #58a 25%, transparent 0, transparent 75%, #58a 0), linear-gradient(45deg, #58a 25%, transparent 0, transparent 75%, #58a 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px; }
+
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,53 @@
+@import "common";
+.container {
+  @include container();
+}
+.input-text {
+  @include input-text();
+}
+.btn {
+  @include btn();
+}
+.translucent-border {
+  @include translucent-border();
+}
+.multiple-frames {
+  @include multiple-frames(#fff, inset 0 0 0 10px #655,inset 0 0 0 15px deeppink,inset 0 2px 5px 15px rgba(0,0,0,.6));
+  padding:15px;
+}
+.double-border {
+  height:10px;
+  @include double-border(#fff,1px dashed #000,-2px)
+}
+.inside-corner {
+  height: 10px;
+  @include inside-corner()
+}
+.horizontal-stripes {
+  height: 100px;
+  @include horizontal-stripes(#fb3, #58a);
+}
+.vertical-stripes {
+  height: 100px;
+  @include vertical-stripes(#fb3, #58a)
+}
+.diagonal-stripes {
+  height: 100px;
+  @include diagonal-stripes(#fb3, #58a)
+}
+.subtle-stripes {
+  height: 100px;
+  @include subtle-stripes(#fb3);
+}
+.blueprint {
+  height: 100px;
+  @include blueprint(#fb3, 3);
+}
+.polka {
+  height: 100px;
+  @include polka(#fb3);
+}
+.checkerboard {
+  height: 100px;
+  @include checkerboard(#fb3, #58a);
+}

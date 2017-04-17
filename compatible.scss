@@ -1,0 +1,20 @@
+//box-shadow
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+//transition
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+//user-select
+@mixin user-select($user-select) {
+  -webkit-user-select: $user-select;
+  -moz-user-select: $user-select;
+  -ms-user-select: $user-select;
+  user-select: $user-select;
+}
